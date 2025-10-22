@@ -143,33 +143,13 @@ const AdminDashboard: React.FC = () => {
   const [courses, setCourses] = useState<Course[]>([
     {
       id: 1,
-      name: 'Data Structures and Algorithms',
-      code: 'CS-301',
-      professor: 'Dr. Robert Smith',
-      students: 45,
-      assignments: 8,
-      status: 'Active',
-      createdAt: '2024-08-20'
-    },
-    {
-      id: 2,
-      name: 'Web Development',
-      code: 'CS-401',
-      professor: 'Dr. Sarah Davis',
-      students: 32,
+      name: 'Java II',
+      code: 'CS-265',
+      professor: 'Dr. Indranil Roy',
+      students: 35,
       assignments: 6,
       status: 'Active',
-      createdAt: '2024-09-01'
-    },
-    {
-      id: 3,
-      name: 'Database Systems',
-      code: 'CS-302',
-      professor: 'Dr. Robert Smith',
-      students: 28,
-      assignments: 5,
-      status: 'Archived',
-      createdAt: '2024-07-15'
+      createdAt: '2024-08-20'
     }
   ]);
 
@@ -470,8 +450,7 @@ const AdminDashboard: React.FC = () => {
           </select>
           <select className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
             <option>All Professors</option>
-            <option>Dr. Robert Smith</option>
-            <option>Dr. Sarah Davis</option>
+            <option>Dr. Indranil Roy</option>
           </select>
         </div>
 
@@ -2108,11 +2087,11 @@ const AdminDashboard: React.FC = () => {
             <div>
               <label className="text-sm font-medium text-gray-700">Status</label>
                 <p className="text-gray-900 mt-1">{selectedItem.status}</p>
-              </div>
-              <div>
+            </div>
+            <div>
                 <label className="text-sm font-medium text-gray-700">Courses</label>
                 <p className="text-gray-900 mt-1">{selectedItem.courses}</p>
-              </div>
+            </div>
               <div>
                 <label className="text-sm font-medium text-gray-700">Assignments</label>
                 <p className="text-gray-900 mt-1">{selectedItem.assignments}</p>
