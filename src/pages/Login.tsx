@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Code2 } from 'lucide-react';
 import Button from '../components/Button';
+import Logo from '../components/Logo';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -26,7 +26,7 @@ const Login: React.FC = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-slate-100 flex items-center justify-center p-4">
       <div className="bg-white rounded-xl shadow-lg w-full max-w-md p-8">
         <div className="flex flex-col items-center mb-8">
-          <Code2 className="text-blue-600 mb-3" size={48} />
+          <Logo variant="full" size="lg" className="mb-3" />
           <h1 className="text-3xl font-bold text-gray-800">Code Grader</h1>
           <p className="text-gray-500 mt-2">Sign in to your account</p>
         </div>
